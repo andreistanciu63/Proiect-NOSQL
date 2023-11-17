@@ -1,0 +1,99 @@
+<div class="card card-body">
+  <h3>Films Idea</h3>
+  <form action="/films/{{film._id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT" />
+    <div class="form-group">
+      <label for="titlu">Titlu</label>
+      <input
+        type="text"
+        name="titlu"
+        class="form-control"
+        required
+        value="{{film.titlu}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="regizor">Regizor</label>
+      <input
+        type="text"
+        name="regizor"
+        class="form-control"
+        required
+        value="{{film.regizor}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="an_lansare">An lansare</label>
+      <input
+        type="text"
+        name="an_lansare"
+        class="form-control"
+        required
+        value="{{film.an_lansare}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="gen">Gen</label>
+      <input
+        type="text"
+        name="gen"
+        class="form-control"
+        required
+        value="{{film.gen}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="actori">Actori</label>
+      <input
+        type="text"
+        name="actori"
+        class="form-control"
+        required
+        value="{{film.actori}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="rating">Rating</label>
+      <input
+        type="text"
+        name="rating"
+        class="form-control"
+        required
+        value="{{film.rating}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="durata">Durata</label>
+      <input
+        type="text"
+        name="durata"
+        class="form-control"
+        required
+        value="{{film.durata}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="tara_productie">Tara Productie</label>
+      <input
+        type="text"
+        name="tara_productie"
+        class="form-control"
+        required
+        value="{{film.tara_productie}}"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="limba">Limba</label>
+      <input
+        type="text"
+        name="limba"
+        class="form-control"
+        required
+        value="{{film.limba}}"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

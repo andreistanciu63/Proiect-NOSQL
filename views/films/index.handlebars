@@ -1,0 +1,20 @@
+{{#each films}}
+  <div class="card card-body">
+    <h4>{{titlu}}</h4>
+    <p>{{regizor}}</p>
+    <p>{{an_lansare}}</p>
+    <p>{{gen}}</p>
+    <p>{{actori}}</p>
+    <p>{{rating}}</p>
+    <p>{{durata}}</p>
+    <p>{{tara_productie}}</p>
+    <p>{{limba}}</p>
+    <a class="btn btn-dark btn-block" href="/films/edit/{{_id}}">Edit</a>
+    <form method="post" action="/films/{{_id}}?_method=DELETE">
+      <input type="hidden" name="_method" value="DELETE" />
+      <input type="submit" class="btn btn-danger btn-block" value="Delete" />
+    </form>
+  </div>
+{{else}}
+  <p>No films listed</p>
+{{/each}}
